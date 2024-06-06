@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Moore's IT Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background: linear-gradient(-45deg, #bdc3c7, #2c3e50, #f0663b, #2c3e50);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        header {
+            background-color: black;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            font-family: 'Lobster', cursive;
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        .banner {
+            background-color: #222;
+            text-align: center;
+            padding: 0.5rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .banner a {
+            color: #f0663b;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem;
+            transition: color 0.3s, background-color 0.3s;
+            font-size: 1rem;
+            display: inline-block;
+        }
+        .banner a:hover {
+            color: #fff;
+            background-color: #f0663b;
+        }
+        .container {
+            padding-top: 4rem;
+        }
+        section {
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 1000px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .anchor {
+            display: block;
+            position: relative;
+            top: -80px;
+            visibility: hidden;
+        }
+        footer {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+        }
+        h2 {
+            color: #2c3e50;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            border-bottom: 2px solid #f0663b;
+            padding-bottom: 0.5rem;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #ecf0f1;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+        ul li a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        ul li a:hover {
+            text-decoration: underline;
+        }
+        details {
+            margin-top: 1rem;
+        }
+        details[open] summary ~ * {
+            animation: sweep 0.5s ease-in-out;
+        }
+        @keyframes sweep {
+            0% { opacity: 0; transform: translateY(-10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            padding: 0.5rem;
+            background: #f0663b;
+            color: #fff;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        summary:hover {
+            background-color: #333;
+        }
+        details[open] summary {
+            background-color: #333;
+        }
+        @media (max-width: 768px) {
+            .banner a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+            section {
+                padding: 1rem;
+                margin: 1rem;
+            }
+        }
+        #scrollTop {
+            position: fixed;
+            bottom: 50px;
+            left: 20px;
+            background-color: #f0663b;
+            color: black;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 15px;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        #scrollTop:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Max Moore</h1>
+    </header>
+    <div class="banner">
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#interests">Personal Interests</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="container">
+        <div id="about" class="anchor"></div>
+        <section>
+            <h2>About Me</h2>
+            <p>Hi, I'm Max Moore, an IT professional with over 3 years of experience working in IT. I have experience in web development, ChatGPT and prompting, and network infrastructure and design. I specialize in creating efficient and effective solutions for various IT challenges. I would like to use this website as a platform to showccase some of personal  and profesianl achiements.</p>
+        </section>
+        <div id="skills" class="anchor"></div>
+        <section>
+            <h2>Skills</h2>
+            <details>
+                <summary>Web Development</summary>
+                <ul>
+                    <li>This website is my first project in web development</li>
+                    <li>Used ChatGPT 4o to assist with scripting</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Project Management</summary>
+                <ul>
+                    <li>Coordinated with clients and management to complete projects involving the installation, configuration, and networking of devices such as switches, servers, laptops, desktops, and printers.</li>
+                </ul>
+            </details>
+            <details>
+                <summary>PBX Administration</summary>
+                <ul>
+                    <li>Installed infrastructure, supported hardware and technical issues with deskphones and cloud infrastructer</li>
+                    <li>User management in PBX platforms like GoTo, RingCentral, and Zoom cloud PBX</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Network and User Side Helpdesk</summary>
+                <ul>
+                    <li>Day-to-day helpdesk support in user hardware, networking, software, and administrative tickets within Microsoft active directory domain services.</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Virtual Machines</summary>
+                <ul>
+                    <li>Personal projects setting up virtual machines on VirtualBox</li>
+  
+                    <li>Experience with Linux operating system setup and configuration</li>
+                    <li>Setting up Windows Remote Desktop connections to desktops and servers for clients</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Cloud Hosted Server Administration</summary>
+                <ul>
+                    <li>Experience administering users in Office 365 and Azure AD</li>
+                    <li>Experience with Google Cloud</li>
+                </ul>
+            </details>
+        </section>
+        <div id="experience" class="anchor"></div>
+        <section>
+            <h2>Previous Work Experience</h2>
+            <p>I have extensive experience working in data centers as a network technician, where I supported multiple clients through a managed service provider. My expertise includes working with virtual machines, Active Directory User Management, Office 365, and Azure cloud infrastructure management. Additionally, I have experience with Trapeze software for transportation services. I have successfully deployed, tracked, and managed hundreds of laptops for various clients. Throughout these roles, I have honed my project management and time management skills, ensuring efficient and effective IT solutions. My experience also includes network installations for public agencies like San Mateo County Harbor District and for Transdev North America's San Francisco office.</p>
+        </section>
+        <div id="interests" class="anchor"></div>
+        <section>
+            <h2>Personal Interests</h2>
+            <p>Beyond my professional life, I have a variety of interests that keep me motivated and inspired. I grew up involved in athletics and have a passion for sports, including baseball, football, basketball, and soccer. I am a massive Giants and 49ers fan. I also enjoy following the Golden State Warriors. Recently, I have taken up running and completed a half marathon in Yosemite. Additionally, I enjoy movies and television, which help me unwind and find new ideas.</p>
+        </section>
+        <div id="contact" class="anchor"></div>
+        <section>
+            <h2>Contact</h2>
+            <p>You can reach me at:</p>
+            <ul>
+                <li>Email: <a href="mailto:maxmoore859@gmail.com">maxmoore859@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/max-moore-7b91401b4/" target="_blank">Max Moore's LinkedIn Profile</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Max Moore. All rights reserved.</p>
+    </footer>
+    <button id="scrollTop" onclick="scrollToTop()">&#8679;</button>
+    <script>
+        // Show the button when the user scrolls down 20px from the top
+        window.onscroll = function() {
+            const scrollTopButton = document.getElementById('scrollTop');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollTopButton.style.display = "block";
+            } else {
+                scrollTopButton.style.display = "none";
+            }
+        };
+
+        // Scroll to the top of the document
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
